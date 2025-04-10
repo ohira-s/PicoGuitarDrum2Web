@@ -80,7 +80,7 @@
 	スイッチS7を押すとコードセット1と2を切り替えることができます。合計12のコードをスイッチで指定して演奏できます。 
  
 ### 5-3. 演奏
-![picogd_labels_pads](https://github.com/ohira-s/PICO_USB_MIDI_INSTRUMENT/blob/master/Docs/picogd_labels_pads.jpg)  
+![picogd_labels_pads](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_labels_pads.jpg)  
 
 1) 感圧パッドP1〜P6  
 
@@ -106,7 +106,7 @@
 　なお、ここでの設定は一時的なもので電源オフで設定は消えます。恒久的に使用したいコード設定は設定ファイル化してPICO2Wに書き込む必要があります。    
 
 ### 6-1. OLED画面
-![picoguitar_guitar_settings.png](https://github.com/ohira-s/PICO_USB_MIDI_INSTRUMENT/blob/master/Docs/picoguitar_guitar_settings.png)  
+![picoguitar_guitar_settings.png](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_chord_settings.png)  
 　コード設定時の画面は以下のようになっています（上記サンプル画面の表示で説明します）  
 1) SWTCH: 1  
 
@@ -150,7 +150,7 @@
 　スイッチを押すたびに設定ファイルが切り替わり、即座にコード割り当ても変更されます。  
  
 ### 6-9. 演奏
-![picogd_labels_pads](https://github.com/ohira-s/PICO_USB_MIDI_INSTRUMENT/blob/master/Docs/picogd_labels_pads.jpg)  
+![picogd_labels_pads](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_labels_pads.jpg)  
 
 1) 感圧パッドP1〜P6  
 
@@ -173,7 +173,7 @@
 
 ## 7. コンフィグレーションモード1
 　コンフィグレーションモード1では、演奏の全体的な設定ができます。<br/>
-![picoguitar_guitar_config1.png](https://github.com/ohira-s/PICO_USB_MIDI_INSTRUMENT/blob/master/Docs/picoguitar_guitar_config1.png)
+![picoguitar_guitar_config1.png](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_configuration1.png)
 <br/>
 ### 7-1. Velocity Offset
 　8個のパッドは圧力を検知して、MIDI NOTE-ONのベロシティを変更して演奏する音の大きさを変えています。このスイッチを押すとベロシティの下限を変更できます。ベロシティの範囲が大きくて弱い音の音量が小さすぎるといった場合は、この値を大きくすることで解消できます。<br/>
@@ -221,7 +221,7 @@
 
 ## 8. コンフィグレーションモード2
 　コンフィグレーションモード2では、演奏の全体的な設定ができます。<br/>
-![picoguitar_guitar_config2.png](https://github.com/ohira-s/PICO_USB_MIDI_INSTRUMENT/blob/master/Docs/picoguitar_guitar_config2.png)
+![picoguitar_guitar_config2.png](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_configuration2.png)
 <br/>
 ### 8-1. MIDI Channel
 　ギター演奏データを送信するMIDI OUTチャンネルを指定します。<br/>
@@ -273,7 +273,7 @@
 
 ## 9. コード譜演奏モード
 　コード譜演奏モードでは、あらかじめ保存されているコード譜を使ってスイッチを押すだけでコードが切り替わって曲を演奏できます。コード譜は複数保存可能です（個数制限はありません。PICOのメモリが許す範囲で保存できます）<br/>
-![picoguitar_play_music.png](https://github.com/ohira-s/PICO_USB_MIDI_INSTRUMENT/blob/master/Docs/picoguitar_play_music.png)
+![picoguitar_play_music.png](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_guitar_music.png)
 
 ### 9-1. Previous File
 　1つ前のコード譜ファイルを選択します。演奏対象のコードはコード譜の先頭になります。<br/>
