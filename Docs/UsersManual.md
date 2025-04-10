@@ -1,6 +1,6 @@
 # Pico Guitar & Drum User's Manual
 
-![picogd_overview2](/Users/sohira/Documents/PICO2W/circuit/PicoGuitarDrums2W/Docs/picogd_overview2.jpg)
+![picogd_overview2](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_overview2.jpg)
 ## 1. 機能
 　Pico Guitar & DeumはUSB MIDIデバイスとして動作するMIDIコントローラーです。  
 　押しボタンスイッチにコードを割り当てておくことでスイッチを押してコードを選択し、ギターの弦に相当する感圧パッドを押すことでギターをコード演奏しているようにMIDIメッセージをUSB MIDI音源に送信できます。ピッチベンドをかけたり、アフタータッチでモジュレーションをかけて演奏に変化をつけることもできます。  
