@@ -36,7 +36,7 @@
 5) MIDI音源の電源を入れます。MIDI音源からUSBケーブルで電源が供給されると、Pico Guitar & Drumが起動してOLED画面に「**PicoGuitar & Drum**」と表示されます。  
 6) OLED画面が「**---GUITAR PLAY---**」という演奏用画面になると演奏できます。  
 　この画像は、Unit-SYNTH/Unit-MIDIというGM音源シンセモジュールをPICO2で制御している自作のUSB MIDIホスト音源と接続したものです。  
-![picogd_connection](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_connection.jpg)
+![picogd_connection](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_connections.jpg)
 
 ## 5. ギターコード演奏モード
 　起動直後はコード演奏画面になっています。このモードではギターのコード演奏ができます。  
