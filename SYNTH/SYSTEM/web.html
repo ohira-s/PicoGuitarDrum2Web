@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <title>PICO Guitar/Drum</title>
+  <style type="text/css">
+    .center {
+      width: fit-content;
+      margin: auto;
+    }
+
+    label {
+      display: inline-block;
+      width: 80px;
+      vertical-align: top;
+    }
+  </style>
+
+<body>
+  <h1><a href="./">PICO Guitar/Drum</a></h1>
+  <div><REPL_error_message/></div>
+
+  <h3 id="TITLE_Change_Instrument">Change Instrument</h3>
+  <form action="/change_instrument" method="post">
+    <div>
+      <label for="g_instrument_select">Instrument</label> <select name="SELECTED_INSTRUMENT" id="g_instrument_select"><REPL_g_instruments_list/></select>
+      <input type="submit" value="CHANGE" />
+    </div>
+  </form>
+
+  <h3 id="TITLE_Guitar_Score_Upload">Guitar Score Upload</h3>
+  <form action="/download_guitar_score" method="post">
+    <div>
+      <label for="g_score_file_select">Select File</label> <select name="SELECTED_SCORE" id="g_score_file_select"><REPL_g_score_file_options/></select>
+      <input type="submit" value="DOWNLOAD" />
+    </div>
+  </form>
+
+  <form action="/upload_guitar_score" method="post">
+    <div>
+      <label for="g_score_file">File Name</label> <input type="text" name="FILE_NAME" id="g_score_file" value="<REPL_g_score_file/>" size="20"/><br/>
+      <label for="g_score_data">Score</label> <textarea name="SCORE_DATA" id="g_score_data" rows="20" cols="100"><REPL_g_score_data/></textarea>
+    </div>
+    <div>
+      <input type="submit" value="UPLOAD" />
+    </div>
+  </form>
+
+  <h3 id="TITLE_Guitar_Score_List_Upload">Guitar Scores List Upload</h3>
+  <form action="/upload_guitar_scores_list" method="post">
+    <div>
+      <label for="g_scores_list">Scores List</label> <textarea name="SCORE_LIST" id="g_scores_list" rows="20" cols="100"><REPL_g_scores_list/></textarea>
+    </div>
+    <div>
+      <input type="submit" value="UPLOAD" />
+    </div>
+  </form>
+
+  <h3 id="TITLE_Drumset_Upload">Drum Set Upload</h3>
+  <form action="/download_drumset" method="post">
+    <div>
+      <label for="g_drumset_file_select">Select File</label> <select name="SELECTED_DRUMSET" id="g_drumset_file_select"><REPL_g_drumset_file_options/></select>
+      <input type="submit" value="DOWNLOAD" />
+    </div>
+  </form>
+
+  <form action="/upload_drumset" method="post">
+    <div>
+      <label for="g_drumset_file">File Name</label> <input type="text" name="FILE_NAME" id="g_drumset_file" value="<REPL_g_drumset_file/>" size="20"/><br/>
+      <label for="g_drumset_name">Set  Name</label> <input type="text" name="DRUMSET_NAME" id="g_drumset_name" value="<REPL_g_drumset_name/>" size="20"/><br/>
+
+      <label for="g_drumset_data1">Inst.1</label> <select name="DRUMSET_DATA1" id="g_drumset_data1" rows="20" cols="100"><REPL_g_drumset_options1/></select><br/>
+      <label for="g_drumset_data2">Inst.2</label> <select name="DRUMSET_DATA2" id="g_drumset_data2" rows="20" cols="100"><REPL_g_drumset_options2/></select><br/>
+      <label for="g_drumset_data3">Inst.3</label> <select name="DRUMSET_DATA3" id="g_drumset_data3" rows="20" cols="100"><REPL_g_drumset_options3/></select><br/>
+      <label for="g_drumset_data4">Inst.4</label> <select name="DRUMSET_DATA4" id="g_drumset_data4" rows="20" cols="100"><REPL_g_drumset_options4/></select><br/>
+      <label for="g_drumset_data5">Inst.5</label> <select name="DRUMSET_DATA5" id="g_drumset_data5" rows="20" cols="100"><REPL_g_drumset_options5/></select><br/>
+      <label for="g_drumset_data6">Inst.6</label> <select name="DRUMSET_DATA6" id="g_drumset_data6" rows="20" cols="100"><REPL_g_drumset_options6/></select><br/>
+    </div>
+    <div>
+      <input type="submit" value="UPLOAD" />
+    </div>
+  </form>
+
+  <h3 id="TITLE_Drumset_List_Upload">Drum Set List Upload</h3>
+  <form action="/upload_drumset_list" method="post">
+    <div>
+      <label for="g_drumset_list">Drum Set List</label> <textarea name="DRUMSET_LIST" id="g_drumset_list" rows="20" cols="100"><REPL_g_drumset_list/></textarea>
+    </div>
+    <div>
+      <input type="submit" value="UPLOAD" />
+    </div>
+  </form>
+
+</body>
+</html>
