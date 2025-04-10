@@ -1,25 +1,23 @@
 # Pico Guitar
-USB MIDI Guitar UI instrument with Raspberry Pi PICO2W.  This device works as a USB device.  USB MIDI Sound module is needed to use this.<br/>
-This device has 6 momentary press switchs and 8 touch sensor pads.  You can assign any guitar chord for each momentary press switch.  6 pads correspond to 6 guitar strings.  The rest two pads are a strumming pad and a pitch bend pad.<br/>
-Press a switch to select a chord, then touch the pads to play guitar.  Pico guitar sends MIDI NOTE-ON messages to a USB MIDI sound source module.<br/>
-You can assign drum instruments for 6 pads of guitar strings.  So you can play a guitar chord and drums at the same time.<br/>
+USB MIDI Guitar UI instrument with Raspberry Pi PICO2W.  This device works as a USB device.  USB MIDI Sound module is needed to use this.  
+This device has 6 momentary press switchs and 8 touch sensor pads.  You can assign any guitar chord for each momentary press switch.  6 pads correspond to 6 guitar strings.  The rest two pads are a strumming pad and a pitch bend pad.  
+Press a switch to select a chord, then touch the pads to play guitar.  Pico guitar sends MIDI NOTE-ON messages to a USB MIDI sound source module.  
+You can assign drum instruments for 6 pads of guitar strings.  So you can play a guitar chord and drums at the same time.  
 If you have guitar chord score files, you can play the music only to press "Next Chord" switch.  PICO2W also works as a web server, so you can upload and edit score files via web browser.<br/>
-![picoguitar_top_look.png](https://github.com/ohira-s/PICO_USB_MIDI_INSTRUMENT/blob/master/Docs/picoguitar_top_look.png)
-- Photo<br/>
-![pico_guitar.jpg](https://github.com/ohira-s/PICO_USB_MIDI_INSTRUMENT/blob/master/Docs/pico_guitar.jpg)
+![picogd_overview2](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_overview2.jpg)  
 
-PICO2W is programmed with circuit python.
+PICO2W is programmed with circuit python.  
 
 # User's Manual
-[User's Manual in Japanese is here.](https://github.com/ohira-s/PICO_USB_MIDI_INSTRUMENT/blob/master/Docs/UsersManual.md)<br/>
-[User's Manual in English is here.](https://github.com/ohira-s/PICO_USB_MIDI_INSTRUMENT/blob/master/Docs/UsersManual_Eng.md)
+[User's Manual in Japanese is here.](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/UsersManual.md)  
+[User's Manual in English is under construction.]()  
 
 # Configuration Manual
-[Application Configuration Manual in Japanese is here.](https://github.com/ohira-s/PICO_USB_MIDI_INSTRUMENT/blob/master/Docs/ConfigManual.md)<br/>
-[Application Configuration Manual in English is here.](https://github.com/ohira-s/PICO_USB_MIDI_INSTRUMENT/blob/master/Docs/ConfigManual_Eng.md)<br/>
+[Application Configuration Manual in Japanese is under construction.]()  
+[Application Configuration Manual in English is under construction.]()  
 
 # Circuit Schematics
-[Circuit schematics is here.](https://github.com/ohira-s/PICO_USB_MIDI_INSTRUMENT/blob/master/Docs/PICO_Guitar_Circuit.pdf)
+[Circuit schematics is here.](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/PICO_Guitar_Circuit.pdf)
 
 # Software Installation
 1) Copy circuitpython (v9.2.1) into PICO2W.
