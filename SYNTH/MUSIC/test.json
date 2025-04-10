@@ -1,0 +1,22 @@
+{"NAME": "test",
+ "MUSIC": [
+    ["C", "M", "LOW", "", 4, "Ah You should", "****"],
+    ["D", "9", "LOW", "", 4, "going back.", "*     * *"],
+    ["D", "9", "LOW", "", 4, "You don't have to", "*         *"],
+    ["F", "M", "LOW", "", 4, "sigh", "* *"],
+    ["C", "M", "LOW", "E", 4, "and body to", "*   *    *"],
+    ["D", "m7", "LOW", "G", 4, "dissuade", "*"],
+    ["G", "7", "LOW", "", 4, "you.", "*"],
+    ["C", "M", "LOW", "", 4, "Nakashita Kotomo Aru", "*   *     *   *   *"],
+    ["E", "m", "LOW", "", 4, "Tsumetaku Shitemo Nao", "*    *    *    *    *"],
+    ["C", "7", "LOW", "", 4, "Yorisou Kimochi ga Are-", "*   *   *   *      *"],
+    ["F", "M", "LOW", "", 4, "-ba I-inosa", " *    *  * *"],
+    ["D", "m7", "LOW", "", 4, "Ore ni Shite Mi-", "*   *     *"],
+    ["G", "7", "LOW", "", 4, "-rya Korede", " *     *"],
+    ["C", "M", "LOW", "", 4, "Saigo no", "*  *"],
+    ["D", "9", "LOW", "", 4, "lady", "*  *"],
+    ["F", "M", "LOW", "", 4, "Ellie", "  * *"],
+    ["G", "7", "LOW", "", 4, "my love", "   * *"],
+    ["C", "M", "LOW", "", 4, "so sweet.", "   * * *"]
+  ]
+}
