@@ -8,7 +8,7 @@
 　コード譜のファイルで登録することで、ワンボタンで譜面に合わせて次のコードへ切り替えながら、簡単に演奏を楽しむこともできます。
 
 ## 2. 外観
-![picogd_labels](/Users/sohira/Documents/PICO2W/circuit/PicoGuitarDrums2W/Docs/picogd_labels.jpg)  
+![picogd_labels](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_labels.jpg)  
 1) スイッチS1〜S8  
 
 	8個の押しボタンスイッチ（S1〜S8）でコードを選んだり、各種設定を行います。  
@@ -28,7 +28,7 @@
 　Pico GuitarのほかにUSBホストデバイスになるUSB MIDI音源が必要です。本機への電源もUSBホスト側から供給される必要があります。MacOSとWindows11の音源への接続も可能です。
 
 ## 4. 接続〜起動
-![picogd_splash](/Users/sohira/Documents/PICO2W/circuit/PicoGuitarDrums2W/Docs/picogd_splash.jpg)  
+![picogd_splash](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_splash.jpg)  
 1) Pico Guitar & Drum（本機）を用意します。  
 2) USBホストとなるUSB MIDI音源を用意します。  
 3) Pico Guitar & DrumとMIDI音源を接続するUSBケーブルを用意します。Pico Guitar & Drum側はRapsberry Pi PICO2WのMicro USB-Bオスです。  
@@ -36,13 +36,13 @@
 5) MIDI音源の電源を入れます。MIDI音源からUSBケーブルで電源が供給されると、Pico Guitar & Drumが起動してOLED画面に「**PicoGuitar & Drum**」と表示されます。  
 6) OLED画面が「**---GUITAR PLAY---**」という演奏用画面になると演奏できます。  
 　この画像は、Unit-SYNTH/Unit-MIDIというGM音源シンセモジュールをPICO2で制御している自作のUSB MIDIホスト音源と接続したものです。  
-![picogd_connection](/Users/sohira/Documents/PICO2W/circuit/PicoGuitarDrums2W/Docs/picogd_connection.jpg)
+![picogd_connection](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_connection.jpg)
 
 ## 5. ギターコード演奏モード
 　起動直後はコード演奏画面になっています。このモードではギターのコード演奏ができます。  
 
 ### 5-1. OLED画面
-![picogd_chrod_settings](/Users/sohira/Documents/PICO2W/circuit/PicoGuitarDrums2W/Docs/picogd_guitar_play.jpg)
+![picogd_chrod_settings](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_guitar_play.jpg)
 　コード演奏時の画面は以下のようになっています（上記サンプル画面の表示で説明します）  
 
 ・C m7-5  H +0  
@@ -62,7 +62,7 @@
 　一番左のE4はオンコード（分数コード）でベース音に変えて発音する音程を表しています。オンコードがない場合は--と表示されます。<br/>
 
 ### 5-2. コード選択
-![picogd_labels_switches](/Users/sohira/Documents/PICO2W/circuit/PicoGuitarDrums2W/Docs/picogd_labels_switches.jpg)  
+![picogd_labels_switches](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_labels_switches.jpg)  
 1) スイッチS1〜S6  
 
 	演奏するコードを選びます。画面の
