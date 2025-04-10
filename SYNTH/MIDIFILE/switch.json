@@ -1,0 +1,14 @@
+[
+	{"ROOT": 0, "CHORD": 0, "POSITION": 0, "ON_NOTE": -1, "SCALE": 4},
+	{"ROOT": 7, "CHORD": 0, "POSITION": 0, "ON_NOTE": -1, "SCALE": 4},
+	{"ROOT": 9, "CHORD": 5, "POSITION": 0, "ON_NOTE": -1, "SCALE": 4},
+	{"ROOT": 4, "CHORD": 5, "POSITION": 0, "ON_NOTE": -1, "SCALE": 4},
+	{"ROOT": 5, "CHORD": 0, "POSITION": 0, "ON_NOTE": -1, "SCALE": 4},
+	{"ROOT": 2, "CHORD": 5, "POSITION": 0, "ON_NOTE": -1, "SCALE": 4},
+	{"ROOT": 0, "CHORD": 0, "POSITION": 1, "ON_NOTE": -1, "SCALE": 4},
+	{"ROOT": 7, "CHORD": 0, "POSITION": 1, "ON_NOTE": -1, "SCALE": 4},
+	{"ROOT": 9, "CHORD": 5, "POSITION": 1, "ON_NOTE": -1, "SCALE": 4},
+	{"ROOT": 4, "CHORD": 5, "POSITION": 1, "ON_NOTE": -1, "SCALE": 4},
+	{"ROOT": 5, "CHORD": 0, "POSITION": 1, "ON_NOTE": -1, "SCALE": 4},
+	{"ROOT": 2, "CHORD": 5, "POSITION": 1, "ON_NOTE": -1, "SCALE": 4}
+]
