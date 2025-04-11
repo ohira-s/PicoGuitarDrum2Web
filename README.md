@@ -20,11 +20,11 @@ PICO2W is programmed with circuit python.
 
 # Web Configulation User's Manual
 [Web Configulation User's Manual in Japanese is here.](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/WebConfigManual.md)  
-[Web Configulation User's Manual in English is under construction.]()  
+[Web Configulation User's Manual in English is under construction.](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/WebConfigManual_Eng.md)  
 
 # Application Configuration Manual
 [Application Configuration Manual in Japanese is here.](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/ConfigManual.md)  
-[Application Configuration Manual in English is under construction.]()  
+[Application Configuration Manual in English is under construction.](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/ConfigManual_Eng.md)  
 
 # Circuit Schematics
 [Circuit schematics is here.](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/PICO_Guitar_Circuit.pdf)
