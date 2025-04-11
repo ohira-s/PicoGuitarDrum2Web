@@ -1,4 +1,4 @@
-[README in English](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/README.md)  
+[README in English](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/README.md)  
 # Pico Guitar & Drum
 Pico Guitar and Drumはギターとドラム演奏用のUIを持つUSB MIDIデバイスです。ラズベリーパイPICO2Wで制御しています。  
 本機はUSB MIDデバイスモードで動作していて音源は内蔵していないので、別途USB MIDIホストとなるパソコンや音源モジュールが必要です。  
