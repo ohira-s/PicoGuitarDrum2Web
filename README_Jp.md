@@ -53,3 +53,6 @@ PICO2Wはcircuitpythonでプログラムしています。
 - font5x8.bin.  
 - lib folder.  
 - SYNTH folder.  
+
+# Blog
+[ブログへのリンク](https://www.thymes-square.net/?p=705)   
