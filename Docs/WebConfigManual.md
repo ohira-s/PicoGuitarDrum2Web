@@ -42,7 +42,8 @@
 	"MUSIC": ["ルート音", "コード名", "LOW or HIGH", "分数コードルート音", "歌詞", "演奏タイミング"]  
 	
 	※ASCII文字のみ記述できます。
-	※ダブルクォートを使用して下さい（シングルクォートは不可）
+	※ダブルクォートを使用して下さい（シングルクォートは不可）  
+	※ファイルフォーマットの詳細は[ConfigManual.md](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/ConfigManual.md)を参照して下さい。  
 
 5) UPLOAD：コード譜アップロード  
 
@@ -60,6 +61,7 @@
 	
 	※ASCII文字のみ記述できます。
 	※ダブルクォートを使用して下さい（シングルクォートは不可）
+	※ファイルフォーマットの詳細は[ConfigManual.md](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/ConfigManual.md)を参照して下さい。  
 
 2) UPLOAD：コード譜リストアップロード  
 
@@ -107,6 +109,7 @@
 	
 	※ASCII文字のみ記述できます。
 	※ダブルクォートを使用して下さい（シングルクォートは不可）
+	※ファイルフォーマットの詳細は[ConfigManual.md](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/ConfigManual.md)を参照して下さい。  
 
 2) UPLOAD：ドラムセットリストアップロード  
 
