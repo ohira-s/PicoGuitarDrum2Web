@@ -1,4 +1,4 @@
-[日本語版READMEへ / README in Japanese](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/Docs/README_Jp.md)  
+[日本語版READMEへ / README in Japanese](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/README_Jp.md)  
 # Pico Guitar & Drum
 USB MIDI Guitar and Drum UI instrument with Raspberry Pi PICO2W.  This device works as a USB device.  USB MIDI Sound module is needed to use this.  
 This device has 8 momentary press switches and 8 touch pressure sensor pads.  You can assign any guitar chord for each momentary press switch.  6 pads correspond to 6 guitar strings.  The rest two pads are a strumming pad and a pitch bend pad.  
