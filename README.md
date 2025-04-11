@@ -1,4 +1,4 @@
-# Pico Guitar
+# Pico Guitar & Drum
 USB MIDI Guitar and Drum UI instrument with Raspberry Pi PICO2W.  This device works as a USB device.  USB MIDI Sound module is needed to use this.  
 This device has 6 momentary press switches and 8 touch pressure sensor pads.  You can assign any guitar chord for each momentary press switch.  6 pads correspond to 6 guitar strings.  The rest two pads are a strumming pad and a pitch bend pad.  
 Press a switch to select a chord, then touch the pads to play guitar.  Pico guitar sends MIDI NOTE-ON messages to a USB MIDI sound source module.  
@@ -6,7 +6,11 @@ You can assign drum instruments for 6 pads of guitar strings.  So you can play a
 If you have guitar chord score files, you can play the music only to press "Next Chord" switch.  PICO2W also works as a web server, so you can upload and edit score files via web browser.  
 Your pressing strength can be both velocity and after touch values.  The velocity controls note volume and the after touch do modulation depth.   
 
+Pico Guitar & Drum Overview:  
 ![picogd_overview2](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_overview2.jpg)  
+
+Functions of the switches and the pads:  
+![picogd_overview2](https://github.com/ohira-s/PicoGuitarDrum2Web/blob/master/Docs/picogd_labels.jpg)  
 
 PICO2W is programmed with circuit python.  
 
