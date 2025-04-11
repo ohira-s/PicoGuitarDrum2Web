@@ -44,3 +44,6 @@ PICO2W is programmed with circuit python.
 - font5x8.bin.  
 - lib folder.  
 - SYNTH folder.  
+
+# Blog
+[Link to my blog](https://www.thymes-square.net/?p=705) in Japanese.  
