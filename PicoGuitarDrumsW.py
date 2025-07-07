@@ -85,6 +85,8 @@
 #            Drumset editor via web.
 #     2.1.1: 04/10/2025
 #            Minor changes (Messages in the display)
+#     2.2.0: 07/07/2025
+#            Improve the performance sending MIDI messages.
 ##########################################################################
 
 import asyncio
@@ -450,12 +452,14 @@ class ADC_Device_class:
                 # Note a string off
                 if string <= 5:
                     if self._note_on[string]:
+                        instrument_guitar.play_a_string(5 - string, 0)
                         self._note_on[string] = False
                         self._adc_on[string] = False
                 
                 # Note a chord off
                 elif string == 7:
                     if self._play_chord:
+                        instrument_guitar.play_chord(False, 0)
                         self._play_chord = False
                         self._adc_on[string] = False
 
@@ -504,6 +508,7 @@ class ADC_Device_class:
                     elif string == 7:
                         if self._play_chord:
 #                            print('PLAY CHORD OFF')
+                            instrument_guitar.play_chord(False, 0)
                             self._play_chord = False
                             self._adc_on[string] = False
 
@@ -705,13 +710,7 @@ class USB_MIDI_Instrument_class:
 #        print('MIDI SEND:', channel, midi_msg)
 #        print('INSTANCE:', isinstance(midi_msg, NoteOn), isinstance(midi_msg, NoteOff), self._send_note_on[channel])
         if isinstance(midi_msg, NoteOn):
-            if midi_msg.note in self._send_note_on[channel]:
-                self._usb_midi[channel].send(NoteOff(midi_msg.note, channel=channel))
-                sleep(0.005)
-#                print('MIDI NOTE OFF:', midi_msg.note)
-#                print('NOTE ON CH-a:', channel, self._send_note_on[channel])
-
-            else:
+            if midi_msg.note not in self._send_note_on[channel]:
                 self._send_note_on[channel].append(midi_msg.note)
 
             pico_led.value = True
@@ -1319,11 +1318,10 @@ class Guitar_class:
             if string_velocity > 0:
                 velocity = string_velocity + self.offset_velocity()
                 synth.set_note_on(chord_note + capo, velocity if velocity <= 127 else 127, channel)
-                synth._usb_midi[channel].send(NoteOff(0, channel=channel))		# THIS CODE IS NEEDED TO NOTE ON IMMEDIATELY
+
             # Note off
             else:
                 synth.set_note_off(chord_note + capo, 0)
-                synth._usb_midi[channel].send(NoteOff(0, channel=channel))		# THIS CODE IS NEEDED TO NOTE ON IMMEDIATELY
 
         return chord_note
 
@@ -1341,31 +1339,17 @@ class Guitar_class:
             if velocity > 127:
                 velocity = 127
                 
-            count_nt = 0
             for nt in notes_in_chord:
                 if nt >= 0:
                     synth.set_note_on(nt + capo, velocity, channel)
-                    synth._usb_midi[channel].send(NoteOff(0, channel=channel))	# THIS CODE IS NEEDED TO NOTE ON IMMEDIATELY
-                    count_nt = count_nt + 1
-                    sleep(0.005)
-
-            if count_nt % 2 == 1:											# THIS CODE IS NEEDED TO NOTE ON IMMEDIATELY
-                synth._usb_midi[channel].send(NoteOff(0, channel=channel))	# THIS CODE IS NEEDED TO NOTE ON IMMEDIATELY
 
         # Notes in chord off
         else:
             # Notes off
 #            print('CHORD NOTEs OFF: ', notes_in_chord)
-            count_nt = 0
             for nt in notes_in_chord:
                 if nt >= 0:
                     synth.set_note_off(nt + capo, 0)
-                    synth._usb_midi[channel].send(NoteOff(0, channel=channel))	# THIS CODE IS NEEDED TO NOTE ON IMMEDIATELY
-                    count_nt = count_nt + 1
-                    sleep(0.005)
-
-            if count_nt % 2 == 1:											# THIS CODE IS NEEDED TO NOTE ON IMMEDIATELY
-                synth._usb_midi[channel].send(NoteOff(0, channel=channel))	# THIS CODE IS NEEDED TO NOTE ON IMMEDIATELY
 
     def show_info(self, param, color):
         if param == self.PARAM_ALL:
